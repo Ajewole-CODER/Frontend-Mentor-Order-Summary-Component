@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segooe UI', sans-serif;
+    
+}
+
+body {
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px lightgray;
+    text-align: center;
+}
+
+.card-header img {
+    width: 100%;
+    height: auto;
+    background-color: darkblue;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-body h2 {
+    color: darkslategray;
+    margin-bottom: 1rem;
+}
+
+.card-body p {
+    color: dimgray;
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.plan-box {
+    background-color: lavenderblush;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.plan-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.plan-info img {
+  width: 30px;
+  height: 30px;
+}
+
+.plan-info p {
+  margin: 0;
+  color: gray;
+  font-size: 13px;
+}
+
+.change {
+  color: mediumblue;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.proceed-btn {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 12px;
+  background-color: mediumslateblue;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 10px lightblue;
+}
+
+.proceed-btn:hover {
+  background-color: slateblue;
+}
+
+.cancel-btn {
+  background: none;
+  border: none;
+  color: gray;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* 💡 Mobile Responsiveness */
+@media (max-width: 400px) {
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .plan-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .change {
+    align-self: flex-end;
+  }
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+  color: #888;
+  letter-spacing: 0.5px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.attribution a:hover {
+  color: mediumslateblue;
+  text-decoration: underline;
+}
